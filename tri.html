@@ -1,0 +1,33 @@
+<html>
+<head>
+<title>Graphe</title>
+<meta charset="utf-8"/>
+<script type="text/javascript">
+
+function main() {
+  var a = [ 5, 8, 3, 10, 2, 3, 7, 9 ];
+  for (var j = 0; j < a.length; j++) { 
+  var m = j;
+  for (var i = m + 1; i < a.length; i++) {
+    if (a[i] < a[m]) { 
+	  m = i;
+   }
+  }
+   var t = a[j]
+   a[0] = a[m];
+   a[m] = t;
+  }
+ }
+ var = [ 5, 8, 3, 10, 2, 7, 9 ]
+ selection_sort(a)
+ alert(a);
+ 
+}	
+
+
+</script>
+</head>
+<body onload ="main()">
+
+</body>
+</html>
